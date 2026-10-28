@@ -22,6 +22,7 @@ class BusinessOwnedModel(models.Model):
 class Category(BusinessOwnedModel):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=255, blank=True)
+    
 
     class Meta:
         ordering = ["name"]
